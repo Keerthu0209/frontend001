@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <style>
+        body {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #e8e8ff;
+            background: radial-gradient(ellipse at top, #1b1b3a, #0a0a1a);
+        }
+        header {
+            background: linear-gradient(90deg, #ff6ec4, #7873f5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid #444a7a;
+            padding: 18px 22px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #444a7a;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #2e2e5c;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: none;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff6ec4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Captain Cosmos's Space Academy</h1>
+        <nav>
+            <a href="#mission">Mission</a>
+            <a href="#crew">Crew</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#planets">Planets</a>
+            <a href="#signup">Join up</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Today's Mission</h2>
+            <p>Welcome aboard, cadet! Your job today is to pilot the <b>USS Curiosity</b> through the <i>Asteroid Belt of Doom</i> and land safely on <mark>Planet Zork</mark>.</p>
+            <p>Good luck - and don't forget your snacks.</p>
+            <p>Space is <sup>very</sup> big and <sub>very</sub> empty.</p>
+            <blockquote>"Space: not just stars and silence, but also snack breaks." - Captain Cosmo</blockquote>
+        </section>
+
+        <section>
+            <h2>Crew Checklist</h2>
+            <ul>
+                <li>Snacks</li>
+                <li>Space suit</li>
+                <li>Backup snacks
+                    <ul>
+                        <li>Space cookies</li>
+                        <li>Freeze-dried ice cream</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Launch Steps</h3>
+            <ol>
+                <li>Buckle in</li>
+                <li>Count down from 10</li>
+                <li>Blast off!</li>
+            </ol>
+        </section>
+
+        <section>
+            <h1>Mission Gallery</h1>
+            <p>Check out real footage from NASA over <a href="https://www.nasa.gov/" target="_blank">nasa.gov</a>!</p>
+            <img src="Rocket.jpg" alt="A rocket">
+        </section>
+
+        <section>
+            <h1>Planet Danger Ratings</h1>
+            <table>
+                <tr>
+                    <th>Planet</th>
+                    <th>Danger Level</th>
+                    <th>Snack Stop</th>
+                </tr>
+                <tr>
+                    <td>Zork</td>
+                    <td>🔥🔥🔥</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Glimmer-9</td>
+                    <td>🔥</td>
+                    <td>No</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <form>
+                <h2>Join the Next Mission</h2>
+                <label>Cadet Name:</label>
+                <input type="text">
+                <label>Space Mail:</label>
+                <input type="email">
+                <label>Cadet Age:</label>
+                <input type="number">
+                <label>Choose Your Ship:</label>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label><input type="checkbox"> I promise to bring Snacks</label>
+                <label>Message to Mission Control</label>
+                <textarea placeholder="write here"></textarea>
+                <button type="submit">Launch!!</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p style="color:red">Captain Cosmo's Space Academy - built with HTML for future astronauts.</p>
+    </footer>
+</body>
+</html>
